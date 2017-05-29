@@ -60,6 +60,7 @@ hgroup{
 	float:left;
 	width: 65%;
 	margin-left: 0px;
+	text-align: center;
 	
 }
 #izquierdo{
@@ -119,5 +120,26 @@ hgroup{
 
 #cuadro{
 	clear: both;
+	float: left;
+	margin:0px;
+	width: 100%;
 }
-
+.masinfoico{
+ 	margin-left: 0px; 	
+ 	columns: 4;
+ 	height: initial;
+ 	text-align: center;
+ 	padding-top: 2em;
+ }
+ .icono{
+	font: bold 15vh Georgia, serif;
+	margin: 0px;
+ }
+ .texticono{
+	font: bold 3vh Georgia, serif;
+	margin: 0px;
+ }
+ #titico{
+ 	clear: both;
+ 	font: bold 2em Georgia, serif;    
+ }
