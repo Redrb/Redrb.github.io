@@ -9,17 +9,27 @@
   <header>
     <h1 id="tituloNombre">Oscar Alexis Bardales Minchán</h1>
   </header>
-  <nav class="w3-bar w3-black display">
-    <a href="#" class="w3-bar-item w3-button">Home</a>
-  <a href="#" class="w3-bar-item w3-button">Curiosidades</a>
-  <a href="#" class="w3-bar-item w3-button">Estudios</a>
-  <a href="#" class="w3-bar-item w3-button">Hogar</a>  
-  </nav>
+ 
+	<nav class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left barramenu" style="display:none" id="mySidebar">
+ 	 <button class="w3-bar-item w3-button w3-large"
+ 	 onclick="w3_close()">Menú &times;</button>
+  	<a href="#" class="w3-bar-item w3-button">Link 1</a>
+ 	<a href="#" class="w3-bar-item w3-button">Link 2</a>
+  	<a href="#" class="w3-bar-item w3-button">Link 3</a>
+	</nav>
+<button class="w3-button w3-xxlarge " id="transparente" onclick="w3_open()">&#9776;</button>
   
-  <figure class="figura">
-  	<img src="images/horizonte.jpg" alt="amigos" class="w3-hover-grayscale escalado">
-	<img src="images/paisaje.jpg" alt="paisaje" class="w3-hover-sepia escalado">
+
+
+  
+  <figure class="figuraSlider">  	
+	<img class="mySlides w3-animate-fading escalado" src="images/horizonte.jpg">
+	<img class="mySlides w3-animate-fading escalado" src="images/ph01.jpg">
+	<img class="mySlides w3-animate-fading escalado" src="images/ph02.jpg">
+	<img class="mySlides w3-animate-fading escalado" src="images/ph03.jpg">
+	<img class="mySlides w3-animate-fading escalado" src="images/ph04.jpg">
   </figure>
+  
 
   <section id="derecho">
     <article>
@@ -60,4 +70,28 @@
   <footer id="pie">
     Derechos Reservados &copy; 2017
   </footer>
+  
+  <script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+  
 </body>
