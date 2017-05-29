@@ -2,36 +2,62 @@
 <html lang="us">
 <head>
 <meta charset="UTF-8">
-<title>Videojuegos</title>
+<title>Personal</title>
 <link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="css/Mihoja.css">
+<link rel="stylesheet" href="icf/style.css">
 <body>
-  <header>
+
+  <header id="header">
     <h1 id="tituloNombre">Oscar Alexis Bardales Minchán</h1>
   </header>
  
 	<nav class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left barramenu" style="display:none" id="mySidebar">
  	 <button class="w3-bar-item w3-button w3-large"
  	 onclick="w3_close()">Menú &times;</button>
-  	<a href="#" class="w3-bar-item w3-button">Link 1</a>
- 	<a href="#" class="w3-bar-item w3-button">Link 2</a>
-  	<a href="#" class="w3-bar-item w3-button">Link 3</a>
+  	<a href="#" class="w3-bar-item w3-button"> <span class="icon-brand230"> </span> Pasatiempos</a>
+ 	<a href="#" class="w3-bar-item w3-button"> <span class="icon-brand221"> </span>Proyectos</a>
+  	<a href="#" class="w3-bar-item w3-button"> <span class="icon-brand205"> </span>Habilidades</a>
+  	<a href="#" class="w3-bar-item w3-button"> <span class="icon-brand71"> </span>Facebook</a>
+  	<a href="#" class="w3-bar-item w3-button"> <span class="icon-brand268"> </span>Twiter</a>
 	</nav>
 <button class="w3-button w3-xxlarge " id="transparente" onclick="w3_open()">&#9776;</button>
-  
-
-
-  
+    
   <figure class="figuraSlider">  	
-	<img class="mySlides w3-animate-fading escalado" src="images/horizonte.jpg">
-	<img class="mySlides w3-animate-fading escalado" src="images/ph01.jpg">
-	<img class="mySlides w3-animate-fading escalado" src="images/ph02.jpg">
-	<img class="mySlides w3-animate-fading escalado" src="images/ph03.jpg">
-	<img class="mySlides w3-animate-fading escalado" src="images/ph04.jpg">
+	<img class="mySlides w3-animate-fading escaladoSlider" src="images/horizonte.jpg">
+	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph01.jpg">
+	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph02.jpg">
+	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph03.jpg">
+	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph04.jpg">
   </figure>
+ 
+  <section>
   
+  <article id ="frase">
+  <h2 id ="titfrase">FRASE:</h2>
+  <p>Confía en el tiempo, que suele<br>
+   dar dulces salidas a muchas <br>
+   amargas dificultades</p>
+   <p id="piefrase">-Miguel de Cervantes</p>
+   
+  </article>
 
-  <section id="derecho">
+<article id="primerapt"> 
+<p class="numer">1</p><p class="textodenum"><span class="icon-brand58"> </span>Aprender</p>
+</article>
+
+<article id="segundapt"> 
+<p class="numer">2</p><p class="textodenum"><span class="icon-brand59"> </span>Practicar</p>
+</article>
+
+<article id="tercerapt"> 
+<p class="numer">3</p><p class="textodenum"><span class="icon-brand97"> </span>Mejorar</p>
+</article>
+
+
+</section>
+<div id="cuadro" class="faseult">
+<section id="derecho" class="faseult">
     <article>
       <header>
         <hgroup>
@@ -42,7 +68,7 @@
       2 de diciembre de 1995
 
       <figure class="figura">
-        <img src="images/cala.jpg" class="w3-circle escalado" alt="Norway">        
+        <img src="images/cala.jpg" class="w3-circle escaladofig" alt="Norway">        
       </figure>
       <footer>
         <p>comentarios (0)</p>
@@ -62,11 +88,14 @@
       </footer>
     </article>
   </section>
-  <aside id="izquierdo">
-    <blockquote>Cita sobre el artículo número uno</blockquote>
-    <blockquote>Cita sobre el artículo número dos</blockquote>
+  <aside id="izquierdo" class="faseult">
+    <blockquote>Contacto: 988081414</blockquote>
+    <blockquote>Trabajo en: Tech Mas Art</blockquote>
     <blockquote>Cita sobre el artículo número dos</blockquote>
   </aside>
+
+</div>
+  
   <footer id="pie">
     Derechos Reservados &copy; 2017
   </footer>
