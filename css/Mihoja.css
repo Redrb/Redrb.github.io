@@ -1,21 +1,43 @@
 @CHARSET "UTF-8";
-.escalado{
+.escaladoSlider{
 	width: 100%;	
 }
 .figuraSlider{
-	    text-align: center;	   
-	    border-bottom-style: double;    	
+	    text-align: center;	   	
     	height: 100%;
-    	border-top-style: double;
     	margin-left: 0px;
     	margin-right: 0px;
+    	background-color: white;
+    	margin-top: 0px;
+}
+.escaladofig{	
+	width: 25%
 }
 #tituloNombre{
 	text-align: center;
 	color:white;
-	background-color: black;
+	font:bold 2em verdana, sans-serif;
+	margin: 0px;	
 }
-
+#header{
+	padding: 25px;
+	background-color: #0288d1;
+	margin: 0px;
+	bold 
+}
+#titfrase{
+	margin-top:2em;
+	color:#a72186;
+	font: bold 2em Georgia, serif;    
+}
+#frase{
+	text-align: center;
+	font:  1.5em Georgia, serif;    
+}
+#piefrase{
+	font: bold 1em Georgia, serif;    
+	margin-bottom: 3em;
+}
 #transparente{
 	color:white;
 	background-color: transparent;
@@ -23,9 +45,8 @@
 	z-index: 1;
 }
 
-body{
-	background-color:#000000;
-	color:white;
+body{	
+	color:#424242;
 }
 hgroup{
 	text-align: center;
@@ -39,11 +60,16 @@ hgroup{
 	float:left;
 	width: 65%;
 	margin-left: 0px;
+	
 }
 #izquierdo{
 	float:right;
 	width: 30%;
 	margin-right: 0px;
+}
+.faseult{
+	background-color: #5c2e91;
+	color: white;
 }
 
 #pie{
@@ -51,9 +77,47 @@ hgroup{
 	text-align:center;
 	padding:20px;
 	border-top:2px solid #999999;
+	background-color: #0288d1;
 }
 
 .display{
 	padding: 10px;
-	
 }
+
+#primerapt{
+	width: 25%;
+	float: left;
+	margin-left: 0px;
+	text-align: -webkit-right;
+}
+#segundapt{
+	width: 25%;
+	float: left;
+	margin-left: 25%;
+	text-align: center;
+}
+#tercerapt{	
+	width: 25%;
+	float: right;
+	text-align: center;
+}
+.numer{
+	text-align: center;
+	border: 6px solid #0089d0;	
+	width: 4em;
+    padding: 1.5em;
+    border-radius: 100px;
+   font:bold 2em verdana, sans-serif;
+   color:#a72186;
+}
+.textodenum{	
+	font:bold 1em verdana, sans-serif;
+	width: 8em;
+	padding: 1.5em;
+	color: black;
+}
+
+#cuadro{
+	clear: both;
+}
+
