@@ -23,7 +23,7 @@
 	padding: 25px;
 	background-color: #0288d1;
 	margin: 0px;
-	bold 
+	
 }
 #titfrase{
 	margin-top:2em;
@@ -41,8 +41,10 @@
 #transparente{
 	color:white;
 	background-color: transparent;
-	position: absolute;
+	position: fixed;
 	z-index: 1;
+	text-shadow: rgb(0,0,0) 3px 3px 5px;
+
 }
 
 body{	
@@ -56,6 +58,17 @@ hgroup{
 	background-color: rgba(97, 97, 97, 0.7)!important;
 }
 
+.barraSocial{
+	z-index: 2;
+	background-color: rgba(97, 97, 97, 0.7)!important;	   
+	    height:15em;
+	    width:20%;
+	   margin-bottom: 0%; 
+	   margin-top: 20%
+	   
+	    
+}
+
 #derecho{	
 	float:left;
 	width: 65%;
@@ -63,6 +76,14 @@ hgroup{
 	text-align: center;
 	
 }
+#derechoinf{	
+	float:left;
+	width: 45%;
+	text-align: center;	
+}
+
+
+
 #izquierdo{
 	float:right;
 	width: 30%;
@@ -72,6 +93,13 @@ hgroup{
 	background-color: #5c2e91;
 	color: white;
 }
+.articuloInforme{
+	background-color: green;
+	color: white;
+}
+.alinear{
+	margin-left: 18%;
+}
 
 #pie{
 	clear: both;
@@ -79,29 +107,39 @@ hgroup{
 	padding:20px;
 	border-top:2px solid #999999;
 	background-color: #0288d1;
+	    position: relative;
+	        z-index: 10;
 }
 
 .display{
 	padding: 10px;
 }
 
-#primerapt{
-	width: 25%;
-	float: left;
-	margin-left: 0px;
-	text-align: -webkit-right;
+.habilidad{
+	clear:both;
+	margin-left: 0px; 	
+ 	columns: 3;
+ 	height: initial;
+ 	text-align: center;
+ 	padding-top: 2em;
 }
-#segundapt{
-	width: 25%;
-	float: left;
-	margin-left: 25%;
+.tithab{
+	font: bold 2vw Georgia, serif;  
+}
+ #contenedorhab{
+ margin: 2vw;
+ margin-bottom: 8vw;
+ }
+ .texthab{
+	font: bold 1vw Georgia, serif;	
+	padding: 1vw;
+	border: solid #5c2e91;
+	margin: 0vw 2vw;
 	text-align: center;
-}
-#tercerapt{	
-	width: 25%;
-	float: right;
-	text-align: center;
-}
+	    width: 20vw;
+    margin-left: auto;	
+ }
+ 
 .numer{
 	text-align: center;
 	border: 6px solid #0089d0;	
@@ -124,6 +162,15 @@ hgroup{
 	margin:0px;
 	width: 100%;
 }
+
+#cuadroInf{
+	clear: both;
+	float: left;
+	margin:0px;
+	width: 80%;
+	margin-left:20%;	
+	background-color: green;
+}
 .masinfoico{
  	margin-left: 0px; 	
  	columns: 4;
@@ -132,14 +179,159 @@ hgroup{
  	padding-top: 2em;
  }
  .icono{
-	font: bold 15vh Georgia, serif;
+	font: bold 11vw Georgia, serif;
 	margin: 0px;
  }
  .texticono{
-	font: bold 3vh Georgia, serif;
+	font: bold 2vw Georgia, serif;
 	margin: 0px;
  }
  #titico{
  	clear: both;
- 	font: bold 2em Georgia, serif;    
+ 	font: bold 2vw Georgia, serif;    
  }
+
+.titnav{
+	background-color: black!important;
+	color: white!important;
+}
+
+/*grafico de pastel*/
+
+
+.grafico {
+    height: 200px;
+    margin: 1rem auto;
+    position: relative;
+    width: 200px;
+        background-color: #fff;
+    border-radius: 50%;
+      } 
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+     }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+     }
+
+
+#porcion1 {
+    transform: rotate(0deg);
+     }
+
+#porcion1 .quesito {
+    background-color: rgba(0,0,255,.7);
+    transform: rotate(70deg);
+     }
+#porcion2 {
+    transform: rotate(70deg);
+     }
+#porcion2 .quesito {
+    background-color: rgba(255,255,0,.7);
+    transform: rotate(120deg);
+     }
+#porcion3 {
+    transform: rotate(-170deg);
+     }
+#porcion3 .quesito {
+    background-color: rgba(0,128,0,.7);
+    transform: rotate(25deg);
+     }
+#porcionFin {
+    transform:rotate(-145deg);
+     }
+#porcionFin .quesito {
+    background-color: rgba(255,0,0,.7);
+    transform: rotate(145deg);
+     }
+#porcion1 .quesito:after {
+    content: attr(data-rel);
+    left: 25%;
+    line-height: 5;
+    position: absolute;
+    top: 0;
+    transform: rotate(-70deg);
+}
+#porcion2 .quesito:after {
+    content: attr(data-rel);
+    left: 15%;
+    position: absolute;
+    top: 30%;
+    transform: rotate(-190deg);
+}
+#porcion3 .quesito:after {
+    content: attr(data-rel);
+    left: 35%;
+    position: absolute;
+    top: 4%;
+    transform: rotate(70deg);
+}
+#porcionFin .quesito:after {
+   content: attr(data-rel);
+   left: 10%;
+   position: absolute;
+   top: 30%;
+}
+
+/*fin del grafico de pastel*/
+
+
+/*Barras*/
+
+
+
+#linea1 {
+  background: #46c0ae;
+  margin: 4px 0;
+  text-align: right;
+  padding: 3px 6px;
+  display: block;
+  width: 75%;
+}
+#linea2 {
+  background: #46c0ae;
+  margin: 4px 0;
+  text-align: right;
+  padding: 3px 6px;
+  display: block;
+  width: 20%;
+}
+#linea3 {
+  background: #46c0ae;
+  margin: 4px 0;
+  text-align: right;
+  padding: 3px 6px;
+  display: block;
+  width: 10%;
+}
+#linea4 {
+  background: #46c0ae;
+  margin: 4px 0;
+  text-align: right;
+  padding: 3px 6px;
+  display: block;
+  width: 45%;
+}
+
+
+.grafic {
+  margin-left:15%;
+  width: 100%;
+  background: rgba( 64, 134, 147, .1 );
+  padding: 3px 6px;
+  border: solid black;
+}
+
+
+/*fin Barras*/
+
