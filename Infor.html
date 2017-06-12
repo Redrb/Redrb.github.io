@@ -22,7 +22,7 @@
   <a href="#ganadera" class="w3-bar-item w3-button"><span class="icon-brand108"> </span>Ganadera</a>
 </nav>
 <p></p>
-<nav class="w3-sidebar w3-bar-block" style="width:20%"> 
+<nav class="w3-sidebar w3-bar-block sidebarMenu" > 
   <a href="#" class="w3-bar-item w3-button titnav">Provincias</a>
   <a href="#cajamarca" class="w3-bar-item w3-button">Cajamarca</a>
   <a href="#celendin" class="w3-bar-item w3-button">Celendín</a>
@@ -37,8 +37,8 @@
 	<a href="https://www.facebook.com/1alexisoscar1" class="w3-bar-item w3-button"> <span class="icon-brand297"> </span>Youtube</a>
 	</nav>
 
-<div id="cuadroInf" class="articuloInforme">
-<section id="derechoinf" class="articuloInforme alinear">
+<div id="cuadroInf" >
+<section class="derechoInforme">
   <article id="cajamarca">
         <header>
         <hgroup>
@@ -196,10 +196,16 @@ Contumazà conocida como nido de Condores (Kuntur Masha), se caracteriza por pre
     </article>
    
   </section>
-  <aside id="izquierdo" class="articuloInforme">
-    <blockquote>Consulta: 988081414</blockquote>
-    <blockquote>Fuente: Instituto de Estadistica e Informática</blockquote>
-    <blockquote>Datos actualizados</blockquote>
+  <aside class="izquierdoInforme" >
+    <blockquote class="textoAside">Consulta: 988081414</blockquote>
+    <blockquote class="textoAside" >Fuente: Instituto de Estadistica e Informática</blockquote>
+    <figure class="figureAside">
+			 			 <img class="imgAside"alt="inei" src="images/logoInei.png"/>
+			 </figure>
+    <blockquote class="textoAside">Datos actualizados - 2017</blockquote>
+    
+    
+   
   </aside>
 
 </div>
@@ -210,25 +216,6 @@ Contumazà conocida como nido de Condores (Kuntur Masha), se caracteriza por pre
  <footer id="pie">
     Derechos Reservados Enforce Founder &copy; 2017
   </footer>
-  
-  
-<script >
-onload = function() {
-	  var columnas = document.querySelectorAll("#graficos .columna");
-
-	  for (elem = 0; columnas[elem]; elem++) {if (window.CP.shouldStopExecution(1)){break;}
-	    estaCol = columnas[elem];
-	    pinta = (parseInt(estaCol.innerHTML) / 100 * estaCol.offsetHeight).toFixed(
-	      0
-	    );
-
-	    estaCol.style.boxShadow = "inset 0 -" + pinta + "px 0 0 black";
-	  }
-	window.CP.exitedLoop(1);
-
-	};
-
-	//# sourceURL=pen.js
-</script>
+   
 </body>
 </html>
