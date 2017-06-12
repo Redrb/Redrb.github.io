@@ -3,140 +3,229 @@
 <head>
 <meta charset="UTF-8">
 <title>Personal</title>
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/Mihoja.css">
-<link rel="stylesheet" href="icf/style.css">
-<link rel="icon" href="images/favicon.png" type="image/png" sizes="16x16">
+<link rel="stylesheet" href="css/w3.css"><!-- referencia a w3c -->
+<link rel="stylesheet" href="css/Mihoja.css"><!-- referencia a mi hoja de estilos -->
+<link rel="stylesheet" href="icf/style.css"> <!-- referencia a los icon Fonts  -->
+<link rel="icon" href="images/favicon.png" type="image/png"
+	sizes="16x16"> <!-- Referencia del icono de la pagina -->
+ <link rel="stylesheet" 
+ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!-- Referencia bootstrap -->
 <body>
 
-  <header id="header">
-    <h1 id="tituloNombre"><span class="icon-brand141 "> </span>Oscar Alexis Bardales Minchán</h1>
-  </header>
- 
-	<nav class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left barramenu" style="display:none" id="mySidebar">
- 	 <button class="w3-bar-item w3-button w3-large"
- 	 onclick="w3_close()">Menú &times;</button>
-  	<a href="Infor.html" class="w3-bar-item w3-button"> <span class="icon-brand230"> </span>Informe</a>
- 	<a href="#titico" class="w3-bar-item w3-button"> <span class="icon-brand221"> </span>Intereses</a>
-  	<a href="#frase" class="w3-bar-item w3-button"> <span class="icon-brand205"> </span>Habilidades</a>
-  	<a href="https://www.facebook.com/1alexisoscar1" class="w3-bar-item w3-button"> <span class="icon-brand71"> </span>Facebook</a>
-  	<a href="https://www.facebook.com/1alexisoscar1" class="w3-bar-item w3-button"> <span class="icon-brand268"> </span>Twiter</a>
+	<header id="header">
+		<h1 id="tituloNombre">
+			<span class="icon-brand141 "> </span>Oscar Alexis Bardales Minchán
+		</h1>
+	</header>
+
+	<nav
+		class="w3-sidebar w3-bar-block w3-dark-grey w3-animate-left barramenu"
+		style="display: none" id="mySidebar">
+		<button class="w3-bar-item w3-button w3-large" id="botonMenuDesplegado">Menú
+			&times;</button>
+		<a href="Infor.html" class="w3-bar-item w3-button"> <span
+			class="icon-brand230"> </span>Informe
+		</a> <a href="#titico" class="w3-bar-item w3-button"> <span
+			class="icon-brand221"> </span>Intereses
+		</a> <a href="#frase" class="w3-bar-item w3-button"> <span
+			class="icon-brand205"> </span>Habilidades
+		</a> <a href="https://www.facebook.com/1alexisoscar1"
+			class="w3-bar-item w3-button"> <span class="icon-brand71">
+		</span>Facebook
+		</a> <a href="https://www.facebook.com/1alexisoscar1"
+			class="w3-bar-item w3-button"> <span class="icon-brand268">
+		</span>Twiter
+		</a>
 	</nav>
-<button class="w3-button w3-xxlarge " id="transparente" onclick="w3_open()">&#9776; Menú</button>
+	<button class="w3-button w3-xxlarge " id="botonMenu"
+		onclick="w3_open()">&#9776; Menú</button>
+		
+
+<div class="derecho"><!-- envoltura derecha -->
+
+<!-- Carrusel usando bootstrap -->
+
+<div class="container slideAcoplado">
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+
+    <!-- Envoltura para slides -->
+    <div class="carousel-inner">
     
-  <figure class="figuraSlider">  	
-	<img class="mySlides w3-animate-fading escaladoSlider" src="images/horizonte.jpg">
-	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph01.jpg">
-	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph02.jpg">
-	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph03.jpg">
-	<img class="mySlides w3-animate-fading escaladoSlider" src="images/ph04.jpg">
-  </figure>
- 
-  <section>
-  
-  <article id ="frase">
-  <h2 id ="titfrase">FRASE:</h2>
-  <p>Confía en el tiempo, que suele<br>
-   dar dulces salidas a muchas <br>
-   amargas dificultades</p>
-   <p id="piefrase">-Miguel de Cervantes</p>
-   
-  </article>
-  
- 
-<section id="contenedorhab">
- <h2 class="tithab">Habilidades</h2>
-<div class="habilidad">
-<p class="w3-blue texthab w3-circle">1<br/>Pensamiento positivo </p>
-<p class="w3-blue texthab w3-circle">2<br/>Paciencia</p>
-<p class="w3-blue texthab w3-circle">3<br/>Compasión</p>
-</div>
-<hr>
-<div class="habilidad">
-<p class="w3-blue texthab w3-circle">4<br/>Respeto</p>
-<p class="w3-blue texthab w3-circle">5<br/>Adaptación</p>
-<p class="w3-blue texthab w3-circle">6<br/>Innovación</p>
-</div>
-<hr>
-<div class="habilidad">
+      <div class="item active">
+        <img src="images/ph01.jpg" alt="fundo" >
+      </div>
 
-<p class="w3-blue texthab w3-circle">7<br/>Sinceridad</p>
-<p class="w3-blue texthab w3-circle">8<br/>Escucha Activa</p>
-<p class="w3-blue texthab w3-circle">9<br/>Aprendizaje rapido</p>
-</div>
-<hr>
-</section>
-
-</section>
-<div id="cuadro" class="faseult">
-<section id="derecho" class="faseult">
-    <article>
-      <header>
-        <hgroup>
-          <h1>Nacimiento</h1>
-          <h2> Cajamarca-Perú</h2>
-        </hgroup>
-      </header>
-      2 de diciembre de 1995
-
-      <figure class="figura">
-        <img src="images/cala.jpg" class="w3-circle escaladofig" alt="Norway">        
-      </figure>
-      <p></p>
-      <footer>
-        <p>comentarios (0)</p>
-      </footer>
-    </article>
+      <div class="item">
+        <img src="images/ph02.jpg" alt="fundo02"  >
+      </div>
     
-  </section>
-  <aside id="izquierdo" class="faseult">
-    <blockquote>Contacto: 988081414</blockquote>
-    <blockquote>Trabajo en: Tech Mas Art</blockquote>
-    <blockquote>Cita sobre el artículo número dos</blockquote>
-  </aside>
-
-</div>
-  <h2 id="titico">Intereses</h2>
-  <div class="masinfoico">
-    <p class="icono"><span class="icon-brand8"> </span></p>
-    <p class="icono"><span class="icon-brand84"> </span></p>
-    <p class="icono"><span class="icon-brand14"> </span></p>
-    <p class="icono"><span class="icon-brand45"> </span></p>
-  </div>
-  <div class="masinfoico">    
-    <p class="texticono">Android Studio</p>
-    <p class="texticono">GitHub</p>
-    <p class="texticono">Mascotas</p>
-    <p class="texticono">CSS</p>
-  </div>
+      <div class="item">
+        <img src="images/ph03.jpg" alt="gato01"  >
+      </div>
       
+      <div class="item">
+        <img src="images/ph04.jpg" alt="gato02"  >
+      </div>
+      
+    </div>
+
+    <!-- Controles Izquierdo y derecho -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+</div>
+
+<!-- Fin del carrusel -->
+
+	<section>
+
+		<article id="frase">
+			<h2 id="titfrase">FRASE:</h2>
+			<p>
+				Confía en el tiempo, que suele<br> dar dulces salidas a muchas
+				<br> amargas dificultades
+			</p>
+			<p id="piefrase">-Miguel de Cervantes</p>
+
+		</article>
 
 
-  <footer id="pie">
-    Derechos Reservados Encorce Founder &copy; 2017
-  </footer>
-  
-  <script>
-var myIndex = 0;
-carousel();
+		<section id="contenedorhab">
+			<h2 class="tithab">Habilidades</h2>
+			<div class="habilidad">
+				<p class="w3-blue texthab w3-circle">
+					1<br />Pensamiento positivo
+				</p>
+				<p class="w3-blue texthab w3-circle">
+					2<br />Paciencia
+				</p>
+				<p class="w3-blue texthab w3-circle">
+					3<br />Compasión
+				</p>
+			</div>
+			<hr>
+			<div class="habilidad">
+				<p class="w3-blue texthab w3-circle">
+					4<br />Respeto
+				</p>
+				<p class="w3-blue texthab w3-circle">
+					5<br />Adaptación
+				</p>
+				<p class="w3-blue texthab w3-circle">
+					6<br />Innovación
+				</p>
+			</div>
+			<hr>
+			<div class="habilidad">
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";  
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}    
-    x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 9000);    
-}
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-}
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-</script>
-  
+				<p class="w3-blue texthab w3-circle">
+					7<br />Sinceridad
+				</p>
+				<p class="w3-blue texthab w3-circle">
+					8<br />Escucha Activa
+				</p>
+				<p class="w3-blue texthab w3-circle">
+					9<br />Aprendizaje rapido
+				</p>
+			</div>
+			<hr>
+		</section>
+
+	</section>
+	<div id="cuadro" class="faseult">
+		<section class="faseult">
+			<article>
+				<header>
+					<hgroup>
+						<h1>Oscar Alexis Bardales Minchán</h1>
+						<h2>Cajamarca-Perú</h2>
+					</hgroup>
+				</header>
+				2 de diciembre de 1995
+
+				<figure class="figura">
+					<img src="images/cala.jpg" class="w3-circle escaladofig"
+						alt="Norway">
+				</figure>
+				<p></p>
+				<footer>
+					<p>comentarios (0)</p>
+				</footer>
+			</article>
+
+		</section>
+		
+
+	</div>
+	<h2 id="titico">Intereses</h2>
+	<div class="masinfoico">
+		<p class="icono">
+			<span class="icon-brand8"> </span>
+		</p>
+		<p class="icono">
+			<span class="icon-brand84"> </span>
+		</p>
+		<p class="icono">
+			<span class="icon-brand14"> </span>
+		</p>
+		<p class="icono">
+			<span class="icon-brand45"> </span>
+		</p>
+	</div>
+	<div class="masinfoico">
+		<p class="texticono">Android Studio</p>
+		<p class="texticono">GitHub</p>
+		<p class="texticono">Mascotas</p>
+		<p class="texticono">CSS</p>
+	</div>
+
+<!-- envoltura fin envoltura derecha --></div>
+<!--  inicio envoltura izquierda usado el aside-->
+
+		<aside class="izquierdo">
+		
+			<blockquote class="textoAside">Contacto: 988081414</blockquote>
+			<blockquote class="textoAside">Trabajo en: Tech Mas Art</blockquote>
+			<br>
+			<p class="textoAside">Escuchar ahora: <br>
+			 We will rock you </p>
+			 <figure class="figureAside">
+			 
+			 <img class="imgAside"alt="gif" src="images/wwry.gif"/>
+			 </figure>
+			 
+			 <audio class="audioAside" controls= "controls" preload="none"> 
+				<source src="musica/we will rock you.mp3" type="audio/mp3" />
+				tu navegador no es compatible con html5
+			</audio>
+			
+			
+		</aside>
+
+		
+	<!--Fin envoltura izquierda-->
+
+
+	<footer id="pie"> Derechos Reservados Encorce Founder &copy;
+		2017 </footer>
+
+	<script src="js/funcion.js" type="text/javascript"></script> <!-- Referencia a funciones propias -->
+	<!-- Inicio referencia funciones bootstrap -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<!-- Fin referencia funciones bootstrap -->
 </body>
