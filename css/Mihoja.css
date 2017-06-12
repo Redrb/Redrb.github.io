@@ -20,6 +20,7 @@
 	    z-index: -2;
     position: fixed;
     width: 100%;
+    height: 100%;
 }
 .derecho{	
 	float:left;
@@ -144,10 +145,22 @@ body{
 	border-color: black;
     border: solid;
 }
+.figureTMA{
+	margin-left: 20%;
+	width: 60%;
+}
+#volverBoton{
+	position: fixed;
+	font: 1vh;
+	margin-top: 52%;
+    margin-left: 95%;
+}
+}
 
 .imgAside{
-	width: 100%;
+	width: 100%!important;
 	}
+	
 .textoAside{
 	margin: 5%;
 	font: bold 1.5vw Verdana, sans-serif;  
