@@ -34,16 +34,13 @@ body {
 .dark-opacity{
   background: #0000009c;
 }
+.white-opacity{
+  background: #ffffffd0;
+}
 
 .main-logo{
   width: 150px;
 }
-/* 
-.navbar a{
-  font-family: Tomorrow, sans-serif;
-
-} */
-
 
 .btn {
   width: 230px;
@@ -73,9 +70,6 @@ body {
   clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
 }
 
-
-
-
 .btn::before {
   content: "";
   width: 24px;
@@ -101,3 +95,53 @@ body {
 }
 
 
+.text-red{
+  color: #fe1a0e;
+}
+
+
+.cyber-card {
+  width: 900px;
+  height: 500px; 
+  border: 0;
+  outline: none;
+  position: relative;
+  border-radius: 0.2rem;
+  clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0% 80%, 0 0);
+}
+
+.cyber-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0% 80%, 0 0);
+}
+
+.cyber-card::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  bottom: -14px;
+  left: -13px;
+  background-color: var(--yellow-color);
+  border-top: 2px solid var(--black-color);
+  transform: rotate(45deg);
+}
+
+.cyber-card::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: -14px;
+  right: -13px;
+  background-color: var(--yellow-color);
+  border-bottom: 2px solid var(--black-color);
+  transform: rotate(45deg);
+}
