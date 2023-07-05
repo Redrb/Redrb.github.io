@@ -9,12 +9,12 @@
 }
 
 html {
-  background-color: #1D3759;
+  background-color: #161b23;
   font-family: Tomorrow, sans-serif;
 }
 
 body {
-  background-color: #1D3759;
+  background-color: #161b23;
   background-image: url("../images/night-city.jpg");
   background-position: center;
   background-size: cover;
@@ -138,4 +138,8 @@ body {
   background-color: var(--yellow-color);
   border-bottom: 2px solid var(--black-color);
   transform: rotate(45deg);
+}
+
+.knowledge{
+  height: 1080px;
 }
