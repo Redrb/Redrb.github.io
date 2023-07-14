@@ -13,7 +13,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <link rel="stylesheet" href="assets/css/carousel.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- head page -->
   <link rel="icon" type="image/x-icon" href="assets/images/logo-red.png">
   <title>Oscar Bardales</title>
@@ -21,7 +21,7 @@
 </head>
 
 <body class="all-h">
-  <div class="row m-0">
+  <div class="row m-0 all-h full-screen" id="first">
     <div class="col-lg-6 all-h dark-opacity d-flex justify-content-center align-items-center">
       <div class="brand-logo text-center animate__animated animate__fadeIn">
         <img src="assets/images/logo-red.png" alt="logo" class="main-logo">
@@ -44,9 +44,9 @@
                   <span class="btn_content">Home</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link h3 px-4 btn" href="#">
+                <a class="nav-link h3 px-4 btn" id="knowledge-btn" href="#knowledge">
                   <span class="btn_content">
-                    About me
+                    Knowledge
                   </span>
                 </a>
               </li>
@@ -103,41 +103,182 @@
     </div>
   </div>
 
-  <div class="row m-0 all-h">
+  <div class="row m-0 all-h full-screen" id="knowledge">
     <div class="col-12 py-4">
       <h2 class="text-white text-center">My knowledge </h2>
     </div>
-    <div class="col-12 knowledge d-flex">
+    <div class="col-6 knowledge d-flex">
       <div id="drag-container">
         <div id="spin-container">
 
-          <img src="assets/images/knowledge/c-dark.svg" alt="">
-          <img src="assets/images/knowledge/php-dark.svg" alt="">
-          <img src="assets/images/knowledge/js-dark.svg" alt="">
-          <img src="assets/images/knowledge/ts-dark.svg" alt="">
-          <img src="assets/images/knowledge/dart-dark.svg" alt="">
+          <img src="assets/images/knowledge/c-dark.svg" alt="" data-info-target="c-card">
+          <img src="assets/images/knowledge/php-dark.svg" alt="" data-info-target="php-card">
+          <img src="assets/images/knowledge/js-dark.svg" alt="" data-info-target="js-card">
+          <!-- <img src="assets/images/knowledge/ts-dark.svg" alt="" data-info-target="ts-card"> -->
+          <img src="assets/images/knowledge/dart-dark.svg" alt="" data-info-target="dart-card">
 
-          <img src="assets/images/knowledge/vue-dark.svg" alt="">
-          <img src="assets/images/knowledge/angular-dark.svg" alt="">
-          <img src="assets/images/knowledge/node-dark.svg" alt="">
-          <img src="assets/images/knowledge/sql-dark.svg" alt="">
-          <img src="assets/images/knowledge/aspnet-dark.svg" alt="">
-          <img src="assets/images/knowledge/mysql-dark.svg" alt="">
-          <img src="assets/images/knowledge/laravel-dark.svg" alt="">
-          <img src="assets/images/knowledge/flutter-dark.svg" alt="">
+          <img src="assets/images/knowledge/vue-dark.svg" alt="" data-info-target="vue-card">
+          <img src="assets/images/knowledge/angular-dark.svg" alt="" data-info-target="angular-card">
+          <img src="assets/images/knowledge/node-dark.svg" alt="" data-info-target="node-card">
+          <img src="assets/images/knowledge/sql-dark.svg" alt="" data-info-target="sql-card">
+          <img src="assets/images/knowledge/aspnet-dark.svg" alt="" data-info-target="aspnet-card">
+          <img src="assets/images/knowledge/mysql-dark.svg" alt="" data-info-target="mysql-card">
+          <img src="assets/images/knowledge/laravel-dark.svg" alt="" data-info-target="laravel-card">
+          <img src="assets/images/knowledge/flutter-dark.svg" alt="" data-info-target="flutter-card">
           <p class="text-center"></p>
         </div>
         <div id="ground"></div>
       </div>
     </div>
+    <div class="col-6 knowledge-info d-flex justify-content-center align-items-center">
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="c-card" hidden>
+        <img src="assets/images/knowledge/c.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">C#</h5>
+          <p class="card-text">Es el primer lenguaje aprendi y apliqué para entornos profesionales, hablar de este
+            lenguaje me trae muy buenos recuerdos, cuando lo use fue para el backend de un proyecto de monitoreo de
+            SSOMA, aqui aplique conocimientos de LINQ, inyeccion de dependecias, mis primeras nociones sobre
+            migraciones, creacion de API seguras(utilizando jwt) ademas de un poco de frontend con razor</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="php-card" hidden>
+        <img src="assets/images/knowledge/php.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">PHP</h5>
+          <p class="card-text">Debo admitir que al inicio no era de mis favoritos, sin embargo cuando se usa de manera
+            ordenada, aplicando clean code y de la mano de algun framework como laravel se convierte en uno de mis
+            preferidos, con php hice algunas integraciones con gmail y outlook.</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="js-card" hidden>
+        <img src="assets/images/knowledge/js.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Javascript </h5>
+          <p class="card-text">Cuando lo vi por primera vez me parecio un poco confuso ya que no es fuertemente tipado,
+            en aquel momento incluso no se usaba las definiciones let y const, si no que todo se realizaba con
+            definiciones del tipo var; Adicionalmente se agregaba undersore y jquery(actualmente ya son legacy) lo cual
+            como novato en aque momento me confunció aun más, sin embargo en la actualidad y no es un problema, la
+            animacion que ves al lado la hice usando js en pocos minutos</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="dart-card" hidden>
+        <img src="assets/images/knowledge/dart.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Dart</h5>
+          <p class="card-text">A mi parecer es un mezcla de c# con js, lo inicie a usar para poder realizar aplicaciones
+            moviles y es bastante entretenido de aprender, me encanta la forma de usar las promesas muy similar a js,
+            esto se acopla muy bien cuando se junta con Flutter.</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="vue-card" hidden>
+        <img src="assets/images/knowledge/vue.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Vue js</h5>
+          <p class="card-text">Fue el segundo framework js que vi y el que más usé; Usé options api y en el futuro
+            pienso practicar composition api, de igual maner que con angulas la reactividad de los modelos me parece
+            impresionante, nunca me voy a dejar de asombrar de esos aspectos, supongo que cuando vea react me pasará lo
+            mismo. Desarrollé un editor html para personas que no tengan nociones de html, esto con el fin de maquetar
+            documentos según las preferencias del usuario, no puedo mostrar capturas ya que fue para una empresa privada
+            y considero que lo que haya desarrollado para mis anteriores trabajos es reservado.</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="angular-card" hidden>
+        <img src="assets/images/knowledge/angular.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Angular js</h5>
+          <p class="card-text">Es el primer framework js que usé, aqui obtube nociones de los modelos reactivos, ver
+            como cambiaba algo en tiempo real en la interfaz de usuario me parecio algo increible y util, usar los loops
+            facilitaba el trabajo y los watcher, para estar vigilando siempre si algún modelo cambiaba y agregar eventos
+            en función al cambio que se esté realizando, mostrar alertas </p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="node-card" hidden>
+        <img src="assets/images/knowledge/node.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Node js</h5>
+          <p class="card-text">Debido a que usa js me pareció bastante sencillo, mi principal uso de node js fue para
+            realizar web scraping con puppeter, como recomendacion personal y debido a que se usan mayormente promesas,
+            trata de hacer que tus funciones sean asincronas para usar <b>async / await</b> ya que si usas .then, para
+            los casos de scrapping se van a anidar demasiado (por los tiempos de espera de elementos, navegaciones,
+            etc.) y sería un poco problematico revisar el código, también puedese usar las anidaciones en el .then pero
+            asegurate de sacar el contenido a una funcion para que mantengas el orden.</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="sql-card" hidden>
+        <img src="assets/images/knowledge/sql.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">SQL server</h5>
+          <p class="card-text">texto aqui</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="aspnet-card" hidden>
+        <img src="assets/images/knowledge/aspnet.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Asp.net</h5>
+          <p class="card-text">texto aqui</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="mysql-card" hidden>
+        <img src="assets/images/knowledge/mysql.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">MySQL</h5>
+          <p class="card-text">texto aqui</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="mysql-card" hidden>
+        <img src="assets/images/knowledge/mysql.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">MySQL</h5>
+          <p class="card-text">texto aqui</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="laravel-card" hidden>
+        <img src="assets/images/knowledge/laravel.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Laravel</h5>
+          <p class="card-text">texto aqui</p>
+        </div>
+      </div>
+
+      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="flutter-card" hidden>
+        <img src="assets/images/knowledge/flutter.svg" class="card-img-top p-5 w-25" alt="...">
+        <div class="card-body text-white p-5 pt-1">
+          <h5 class="card-title">Flutter</h5>
+          <p class="card-text">texto aqui</p>
+        </div>
+      </div>
+
+      <div class="card bg-transparent knowledge-card px-5 text-white animate__animated animate__fadeInRight">
+        <div class="card-body p-5 pt-1">
+          <img src="assets/images/knowledge/tanque-evans.png" alt="" class="w-50 m-auto">
+        </div>
+        <div class="card-footer">
+          <h3>Aqui estan mis nenas</h3>
+        </div>
+      </div>
+
+
+    </div>
   </div>
 
-  <div class="row m-0 all-h">
+  <div class="row m-0 all-h full-screen" id="third">
     <div class="col-12 py-4">
-      <h2 class="text-white text-center">My Personal Project </h2>
+      <h2 class="text-white text-center">My Personal projects </h2>
     </div>
     <div class="col-12 projects d-flex">
-     -
+      -
     </div>
   </div>
 

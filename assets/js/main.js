@@ -2,8 +2,6 @@
 "use strict";
 (function () {
 
-
-	console.log('ha cargado');
-
+console.log('loaded');
 
 })();

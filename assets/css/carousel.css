@@ -70,6 +70,13 @@
   left: 0;
 }
 
+.knowledge img{
+  cursor: pointer;
+}
+.knowledge-card{
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
 @-webkit-keyframes spin {
   from {
     -webkit-transform: rotateY(0deg);

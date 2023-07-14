@@ -7,7 +7,7 @@
 	let rotateSpeed = -60; // unit: seconds/360 degrees
 	let imgWidth = 120; // width of images (unit: px)
 	let imgHeight = 140; // height of images (unit: px)
-	
+
 	setTimeout(init, 2000);
 
 	const odrag = document.getElementById('drag-container');
@@ -91,5 +91,33 @@
 
 		return false;
 	};
+
+	console.log('all imgs');
+	console.log(allImg);
+
+
+
+	const all_cards = document.getElementsByClassName('knowledge-card');
+
+	// Loop over them and prevent submission
+	Array.prototype.slice.call(allImg)
+		.forEach(function (img) {
+			img.addEventListener('click', function (event) {
+				const target = img.getAttribute("data-info-target");
+				// console.log('click in image', target);
+
+
+
+				for (const card of all_cards) {
+					card.hidden = true;
+
+				}
+
+
+				document.getElementById(target).hidden = false;
+			}, false)
+		});
+
+
 
 })();
