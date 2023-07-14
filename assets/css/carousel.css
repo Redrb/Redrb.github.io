@@ -75,6 +75,8 @@
 }
 .knowledge-card{
   transition: visibility 0s, opacity 0.5s linear;
+  --animate-duration: 0.8s;
+
 }
 
 @-webkit-keyframes spin {
