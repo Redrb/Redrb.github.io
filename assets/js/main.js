@@ -43,7 +43,7 @@
     const first_milestone = 0;
     const second_milestone = (sections[1].position - sections[0].position) * 0.75;
     const third_milestone = sections[1].position + (sections[2].position - sections[1].position) * 0.75;
-    
+
     window.onscroll = function () {
         const scroll_top = document.documentElement.scrollTop;
         if (first_milestone <= scroll_top && scroll_top <= second_milestone) {
@@ -68,6 +68,15 @@
         }
     }
 
+    const audio = new Audio('./assets/audios/aqui-estan-mis-nenas.mp3');
+    let is_audio_played = false;
+
+    document.getElementById("knowledge-btn").addEventListener("click", function (event) {
+        if (is_audio_played === false) {
+            audio.play();
+            is_audio_played = true;
+        }
+    }, false);
 
 
 
