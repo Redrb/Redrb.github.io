@@ -92,8 +92,7 @@
 		return false;
 	};
 
-	console.log('all imgs');
-	console.log(allImg);
+	
 
 
 

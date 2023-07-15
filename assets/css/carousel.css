@@ -76,7 +76,16 @@
 .knowledge-card{
   transition: visibility 0s, opacity 0.5s linear;
   --animate-duration: 0.8s;
+  border: 6px solid #00f0ff
+}
 
+
+#knowledge{
+  min-height: 960px;
+  /* background-color: #fcee0a; */
+  background-color: black;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
 }
 
 @-webkit-keyframes spin {

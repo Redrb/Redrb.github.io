@@ -21,15 +21,15 @@
 
 <body class="all-h">
   <div class="row m-0 all-h full-screen" id="first">
-    <div class="col-lg-6 all-h dark-opacity d-flex justify-content-center align-items-center">
+    <div class="col-lg-6 dark-opacity d-flex justify-content-center align-items-center">
       <div class="brand-logo text-center animate__animated animate__fadeIn">
         <img src="assets/images/logo-red.png" alt="logo" class="main-logo">
         <h1 class="text-red mt-4">Oscar Bardales</h1>
       </div>
     </div>
-    <div class="col-lg-6 all-h">
+    <div class="col-lg-6">
 
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mt-4 animate__animated animate__fadeIn">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent mt-4 animate__animated animate__fadeIn row">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -37,19 +37,19 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-around w-100">
-              <li class="nav-item">
+            <ul class="navbar-nav w-50 px-5">
+              <li class="nav-item d-flex justify-content-end">
                 <a class="nav-link h3 px-4 btn active" aria-current="page" href="#">
                   <span class="btn_content">Home</span></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-flex justify-content-end">
                 <a class="nav-link h3 px-4 btn" id="knowledge-btn" href="#knowledge">
                   <span class="btn_content">
                     Knowledge
                   </span>
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item d-flex justify-content-end">
                 <a class="nav-link h3 px-4 btn" href="#">
                   <span class="btn_content">
                     Contact
@@ -69,7 +69,7 @@
 
             <div class="row">
               <h2>
-                ¡Hola!
+                ¡Hola mundo!
               </h2>
               <p>
                 Mi nombre es Oscar y soy de Cajamarca. Me gradué en Ingeniería de Sistemas en la Universidad Nacional de
@@ -102,11 +102,11 @@
     </div>
   </div>
 
-  <div class="row m-0 all-h full-screen" id="knowledge">
+  <div class="row m-0 all-h full-screen text-white" id="knowledge">
     <div class="col-12 py-4">
-      <h2 class="text-white text-center">My knowledge </h2>
+      <h2 class="text-center"><b>My knowledge</b></h2>
     </div>
-    <div class="col-6 knowledge d-flex">
+    <div class="col-lg-7 col-md-12 col-12 knowledge d-flex">
       <div id="drag-container">
         <div id="spin-container">
 
@@ -129,12 +129,13 @@
         <div id="ground"></div>
       </div>
     </div>
-    <div class="col-6 knowledge-info d-flex justify-content-center align-items-center">
+    <div
+      class="col-lg-5 col-md-12 col-12 knowledge-info d-none d-md-none d-lg-flex justify-content-center align-items-start mt-5 pt-5">
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="c-card"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight" id="c-card"
         hidden>
-        <img src="assets/images/knowledge/c.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/c.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">C#</h5>
           <p class="card-text">Es el primer lenguaje aprendí y apliqué en entornos profesionales, hablar de este
             lenguaje me trae muy buenos recuerdos, cuando lo use fue para el backend de un proyecto de monitoreo de
@@ -143,10 +144,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="php-card"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight" id="php-card"
         hidden>
-        <img src="assets/images/knowledge/php.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/php.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">PHP</h5>
           <p class="card-text">Debo admitir que al inicio no era de mis favoritos, sin embargo cuando se usa de manera
             ordenada, aplicando clean code y de la mano de algún framework como laravel se convierte en uno de mis
@@ -154,10 +155,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="js-card"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight" id="js-card"
         hidden>
-        <img src="assets/images/knowledge/js.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/js.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Javascript </h5>
           <p class="card-text">Cuando lo vi por primera vez me pareció un poco confuso ya que no es fuertemente tipado,
             en aquel momento incluso no se usaba las definiciones let y const, sino que todo se realizaba con
@@ -167,10 +168,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight"
         id="dart-card" hidden>
-        <img src="assets/images/knowledge/dart.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/dart.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Dart</h5>
           <p class="card-text">A mi parecer es un mezcla de c# con js, inicié a usarlo para poder realizar aplicaciones
             móviles y es bastante entretenido de aprender, me encanta la forma de usar las promesas muy similar a js,
@@ -178,10 +179,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="vue-card"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight" id="vue-card"
         hidden>
-        <img src="assets/images/knowledge/vue.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/vue.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Vue js</h5>
           <p class="card-text">Fue el segundo framework js que vi y el que más usé; Usé options api y en el futuro
             pienso practicar composition api, de igual manera que con angular, la reactividad de los modelos me parece
@@ -192,10 +193,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight"
         id="angular-card" hidden>
-        <img src="assets/images/knowledge/angular.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/angular.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Angular js</h5>
           <p class="card-text">Es el primer framework js que usé, aquí obtuve nociones de los modelos reactivos, ver
             como cambiaba algo en tiempo real en la interfaz de usuario me pareció algo increíble y útil, usar los loops
@@ -204,10 +205,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight"
         id="node-card" hidden>
-        <img src="assets/images/knowledge/node.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/node.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Node js</h5>
           <p class="card-text">Debido a que usa js me pareció bastante sencillo, mi principal uso de node js fue para
             realizar web scraping con puppeter, como recomendación personal y debido a que se usan mayormente promesas,
@@ -218,10 +219,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight" id="sql-card"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight" id="sql-card"
         hidden>
-        <img src="assets/images/knowledge/sql.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/sql.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">SQL server</h5>
           <p class="card-text">Hice mis primeras migraciones, vistas y consultas simples aquí la estudié en la
             universidad y tuve la oportunidad de aplicar los conocimientos mientras realizaba mis prácticas
@@ -232,10 +233,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight"
         id="aspnet-card" hidden>
-        <img src="assets/images/knowledge/aspnet.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/aspnet.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Asp.net</h5>
           <p class="card-text">Debido a que va de la mano con c#, lo vi por primera vez en la universidad y profundicé
             estos conocimientos en un entorno profesional, la forma en la que se va estructurando el proyecto me parece
@@ -247,10 +248,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight"
         id="mysql-card" hidden>
-        <img src="assets/images/knowledge/mysql.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/mysql.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">MySQL</h5>
           <p class="card-text">Es el que más he usado debido a que es gratis, en primera instancia creaba mis bases de
             datos y tablas con línea de comandos sin embargo para facilitar las cosas empecé a usar la herramienta
@@ -261,10 +262,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight"
         id="laravel-card" hidden>
-        <img src="assets/images/knowledge/laravel.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/laravel.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Laravel</h5>
           <p class="card-text">La primera versión que vi fue laravel 5, poco a poco me fui familiarizando con sus
             características, con eloquent y los comandos de php artisan para generar migraciones, controladores y
@@ -275,10 +276,10 @@
         </div>
       </div>
 
-      <div class="card cyber-card dark-opacity knowledge-card px-5 animate__animated animate__fadeInRight"
+      <div class="card dark-opacity knowledge-card px-5 pb-5 animate__animated animate__fadeInRight"
         id="flutter-card" hidden>
-        <img src="assets/images/knowledge/flutter.svg" class="card-img-top p-5 w-25" alt="...">
-        <div class="card-body text-white p-5 pt-1">
+        <img src="assets/images/knowledge/flutter.svg" class="card-img-top p-5 pt-4 pb-2" alt="...">
+        <div class="card-body text-white p-3 pt-1 pe-1">
           <h5 class="card-title">Flutter</h5>
           <p class="card-text">Me decidí por usar flutter, ya que cuando se compila el resultado final puede obtenerse
             una archivo instalable par android y ios, la forma en que se estructuran los widgets con filas, columnas,
@@ -292,11 +293,11 @@
         </div>
       </div>
 
-      <div class="card bg-transparent knowledge-card px-5 text-white animate__animated animate__fadeInRight">
+      <div class="card border-0 bg-transparent knowledge-card px-5 animate__animated animate__fadeInRight">
         <div class="card-body p-5 pt-1">
-          <img src="assets/images/knowledge/tanque-evans.png" alt="" class="w-50 m-auto">
+          <img src="assets/images/knowledge/tanque-evans.png" alt="" class="w-100 m-auto">
         </div>
-        <div class="card-footer">
+        <div class="card-footer border-0 bg-transparent">
           <h3>Aqui estan mis nenas</h3>
         </div>
       </div>

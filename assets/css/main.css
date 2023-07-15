@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
 
 :root {
-  --yellow-color: #fcee09;
+  --yellow-color: #fcee0a;
   --red-color: #ff003c;
   --black-color: #050a0e;
   --blue-color: #00f0ff;
@@ -20,6 +20,20 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   font-family: Tomorrow, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    z-index: 99;
+  }
+  .navbar-nav {
+    flex-direction: column !important;
+    position: fixed;
+    bottom: 20px;
+  }
+  .nav-link {
+    right: 0;
+  }
 }
 
 .all-h {
@@ -67,25 +81,13 @@ body {
 
 .btn::before {
   content: "";
-  width: 24px;
-  height: 24px;
+  width: 40px;
+  height: 40px;
   position: absolute;
   bottom: -14px;
   left: -13px;
   background-color: var(--yellow-color);
   border-top: 2px solid var(--black-color);
-  transform: rotate(45deg);
-}
-
-.btn::after {
-  content: "";
-  width: 24px;
-  height: 24px;
-  position: absolute;
-  top: -14px;
-  right: -13px;
-  background-color: var(--yellow-color);
-  border-bottom: 2px solid var(--black-color);
   transform: rotate(45deg);
 }
 
@@ -140,6 +142,10 @@ body {
   transform: rotate(45deg);
 }
 
-.knowledge{
+.knowledge {
   height: 1080px;
+}
+
+.card-img-top {
+  width: 200px;
 }
