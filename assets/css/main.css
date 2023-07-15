@@ -21,11 +21,10 @@ body {
   background-repeat: no-repeat;
   font-family: Tomorrow, sans-serif;
 }
-
+.navbar {
+  z-index: 99;
+}
 @media (min-width: 992px) {
-  .navbar {
-    z-index: 99;
-  }
   .navbar-nav {
     flex-direction: column !important;
     position: fixed;
@@ -34,6 +33,18 @@ body {
   .nav-link {
     right: 0;
   }
+}
+@media screen and (max-width: 992px) {
+  .navbar {
+    right: 0px;
+  }
+  .navbar>.container-fluid{
+    justify-content: end;
+  }
+}
+.navbar-toggler{
+  background-color: var(--black-color);
+  box-shadow: 0px 0px 5px white;
 }
 
 .all-h {
@@ -97,7 +108,7 @@ body {
 
 .cyber-card {
   width: 900px;
-  height: 500px;
+  height: 450px;
   border: 0;
   outline: none;
   position: relative;
@@ -116,6 +127,7 @@ body {
   right: 2px;
   bottom: 2px;
   clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0% 80%, 0 0);
+  overflow-y: auto;
 }
 
 .cyber-card::before {
@@ -204,7 +216,7 @@ body {
   background-color: #00f0ff;
 }
 
-#tanque-evans-img{
+#tanque-evans-img {
   cursor: pointer;
-  filter: drop-shadow(-10px -8px 8px rgb(38, 38, 38))
+  filter: drop-shadow(-10px -8px 8px rgb(38, 38, 38));
 }
