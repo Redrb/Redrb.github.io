@@ -16,9 +16,11 @@
     function activeNavSection(section) {
         for (const nav of navs) {
             nav.classList.remove("active");
+            nav.classList.remove("fw-bolder");
         }
         const current_element = document.getElementById(section.button_id);
         current_element.classList.add("active");
+        current_element.classList.add("fw-bolder");
     }
 
     const sections = [
@@ -71,7 +73,7 @@
     const audio = new Audio('./assets/audios/aqui-estan-mis-nenas.mp3');
     let is_audio_played = false;
 
-    document.getElementById("knowledge-btn").addEventListener("click", function (event) {
+    document.getElementById("tanque-evans-img").addEventListener("click", function (event) {
         if (is_audio_played === false) {
             audio.play();
             is_audio_played = true;
