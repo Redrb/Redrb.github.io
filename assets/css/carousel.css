@@ -70,21 +70,31 @@
   left: 0;
 }
 
-.knowledge img{
+.knowledge img {
   cursor: pointer;
 }
-.knowledge-card{
+.knowledge-card {
   transition: visibility 0s, opacity 0.5s linear;
   --animate-duration: 0.8s;
-  border: 6px solid #00f0ff
+  border: 6px solid #00f0ff;
+  max-height: 500px;
+  overflow-y: auto;
 }
 
+#tanque-evans-img {
+  width: 350px;
+  cursor: pointer;
+  filter: drop-shadow(-10px -8px 8px rgb(38, 38, 38));
+}
 
-#knowledge{
+#knowledge {
   min-height: 960px;
   background-color: black;
   background-image: url(../images/dots.png);
   background-repeat: repeat;
+}
+.knowledge-card p{
+  text-align: justify;
 }
 
 @-webkit-keyframes spin {
@@ -127,4 +137,15 @@
     -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg);
   }
+}
+
+@media screen and (max-width: 992px) {
+  #drag-container {
+    scale: 0.5;
+  }
+  
+#tanque-evans-img {
+  width: 200px;
+}
+
 }

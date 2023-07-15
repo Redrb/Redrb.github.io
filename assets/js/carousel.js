@@ -2,7 +2,7 @@
 "use strict";
 (function () {
 
-	let radius = 480; // how big of the radius
+	let radius = 400; // how big of the radius
 	let autoRotate = true; // auto rotate or not
 	let rotateSpeed = -60; // unit: seconds/360 degrees
 	let imgWidth = 120; // width of images (unit: px)
