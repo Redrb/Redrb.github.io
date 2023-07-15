@@ -149,3 +149,56 @@ body {
 .card-img-top {
   width: 200px;
 }
+
+#projects {
+  background-color: #fcee0a;
+}
+
+.separator-up-yellow {
+  background-image: url(../images/separator-up-yellow.svg);
+}
+.separator-up-light-blue {
+  background-image: url(../images/separator-up-light-blue.svg);
+}
+
+.separator-up {
+  height: 28px;
+}
+
+.separator {
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.separator-up:before {
+  right: 50%;
+  top: 7px;
+  transform: translate(-500px);
+}
+.separator-up:after {
+  left: 50%;
+  top: 1px;
+  transform: translate(500px);
+}
+.separator:after,
+.separator:before {
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 50vw;
+}
+
+.separator-up-yellow:after,
+.separator-up-yellow:before {
+  background-color: #ded207;
+}
+
+.separator-up-light-blue:after,
+.separator-up-light-blue:before {
+  background-color: #00f0ff;
+}
