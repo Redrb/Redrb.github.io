@@ -39,58 +39,58 @@
 		ospin.style.animation = `${animationName} ${Math.abs(rotateSpeed)}s infinite linear`;
 	}
 
-	function applyTranform(obj) {
-		// Constrain the angle of camera (between 0 and 180)
-		if (tY > 180) tY = 180;
-		if (tY < 0) tY = 0;
+	// function applyTranform(obj) {
+	// 	// Constrain the angle of camera (between 0 and 180)
+	// 	if (tY > 180) tY = 180;
+	// 	if (tY < 0) tY = 0;
 
-		// Apply the angle
-		obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
-	}
+	// 	// Apply the angle
+	// 	obj.style.transform = "rotateX(" + (-tY) + "deg) rotateY(" + (tX) + "deg)";
+	// }
 
-	function playSpin(yes) {
-		ospin.style.animationPlayState = (yes ? 'running' : 'paused');
-	}
+	// function playSpin(yes) {
+	// 	ospin.style.animationPlayState = (yes ? 'running' : 'paused');
+	// }
 
 
-	// setup events
-	document.onpointerdown = function (e) {
-		clearInterval(odrag.timer);
-		e = e || window.event;
-		sX = e.clientX;
-		sY = e.clientY;
+	// // setup events
+	// document.onpointerdown = function (e) {
+	// 	clearInterval(odrag.timer);
+	// 	e = e || window.event;
+	// 	sX = e.clientX;
+	// 	sY = e.clientY;
 
-		this.onpointermove = function (e) {
-			e = e || window.event;
-			nX = e.clientX;
-			nY = e.clientY;
-			desX = nX - sX;
-			desY = nY - sY;
-			tX += desX * 0.1;
-			tY += desY * 0.1;
-			applyTranform(odrag);
-			sX = nX;
-			sY = nY;
-		};
+	// 	this.onpointermove = function (e) {
+	// 		e = e || window.event;
+	// 		nX = e.clientX;
+	// 		nY = e.clientY;
+	// 		desX = nX - sX;
+	// 		desY = nY - sY;
+	// 		tX += desX * 0.1;
+	// 		tY += desY * 0.1;
+	// 		applyTranform(odrag);
+	// 		sX = nX;
+	// 		sY = nY;
+	// 	};
 
-		this.onpointerup = function (e) {
-			odrag.timer = setInterval(function () {
-				desX *= 0.95;
-				desY *= 0.95;
-				tX += desX * 0.1;
-				tY += desY * 0.1;
-				applyTranform(odrag);
-				playSpin(false);
-				if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
-					clearInterval(odrag.timer);
-					playSpin(true);
-				}
-			}, 17);
-			this.onpointermove = this.onpointerup = null;
-		};
+	// 	this.onpointerup = function (e) {
+	// 		odrag.timer = setInterval(function () {
+	// 			desX *= 0.95;
+	// 			desY *= 0.95;
+	// 			tX += desX * 0.1;
+	// 			tY += desY * 0.1;
+	// 			applyTranform(odrag);
+	// 			playSpin(false);
+	// 			if (Math.abs(desX) < 0.5 && Math.abs(desY) < 0.5) {
+	// 				clearInterval(odrag.timer);
+	// 				playSpin(true);
+	// 			}
+	// 		}, 17);
+	// 		this.onpointermove = this.onpointerup = null;
+	// 	};
 
-		return false;
-	};
+	// 	return false;
+	// };
 
 	
 

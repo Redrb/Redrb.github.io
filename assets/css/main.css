@@ -38,11 +38,11 @@ body {
   .navbar {
     right: 0px;
   }
-  .navbar>.container-fluid{
+  .navbar > .container-fluid {
     justify-content: end;
   }
 }
-.navbar-toggler{
+.navbar-toggler {
   background-color: var(--black-color);
   box-shadow: 0px 0px 5px white;
 }
@@ -116,7 +116,7 @@ body {
   clip-path: polygon(90% 0, 100% 20%, 100% 100%, 10% 100%, 0% 80%, 0 0);
 }
 
-.cyber-card-content {
+.cyber-card-content{
   text-align: justify;
   display: flex;
   align-items: center;
@@ -215,3 +215,31 @@ body {
   background-color: #00f0ff;
 }
 
+.projects .btn {
+  background: #ded207;
+  color: black;
+}
+
+.projects .btn::before {
+  content: unset;
+}
+
+.projects .btn_content {
+  background: #faef22;
+}
+
+.projects .btn:hover {
+  color: gray;
+}
+
+.projects .btn.active {
+  background: black !important;
+  font-weight: bolder;
+  color: black !important;
+}
+.projects .card {
+  background-color: #fcee0a;
+}
+p{
+  text-align: justify;
+}

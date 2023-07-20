@@ -1,7 +1,8 @@
 
 "use strict";
 (function () {
-    const navs = document.getElementsByClassName('nav-link');
+    const menu = document.getElementById('main-menu');
+    const navs = menu.getElementsByClassName('nav-link');
 
     function getPosition(obj) {
         let currenttop = 0;
