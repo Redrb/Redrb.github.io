@@ -93,6 +93,12 @@
   background-image: url(../images/dots.png);
   background-repeat: repeat;
 }
+#specialties {
+  min-height: 960px;
+  background-color: black;
+  background-image: url(../images/dots.png);
+  background-repeat: repeat;
+}
 .knowledge-card p{
   text-align: justify;
 }

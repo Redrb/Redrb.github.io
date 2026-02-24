@@ -40,6 +40,11 @@
             section_id: 'projects',
             position: getPosition(document.getElementById('projects')),
         },
+        {
+            button_id: 'specialties-btn',
+            section_id: 'specialties',
+            position: getPosition(document.getElementById('specialties')),
+        },
     ];
 
     let current_section = sections[0];
