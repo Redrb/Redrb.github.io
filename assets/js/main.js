@@ -31,6 +31,11 @@
             position: getPosition(document.getElementById('home'))
         },
         {
+            button_id: 'specialties-btn',
+            section_id: 'specialties',
+            position: getPosition(document.getElementById('specialties')),
+        },
+        {
             button_id: 'knowledge-btn',
             section_id: 'knowledge',
             position: getPosition(document.getElementById('knowledge')),
@@ -40,17 +45,13 @@
             section_id: 'projects',
             position: getPosition(document.getElementById('projects')),
         },
-        {
-            button_id: 'specialties-btn',
-            section_id: 'specialties',
-            position: getPosition(document.getElementById('specialties')),
-        },
     ];
 
     let current_section = sections[0];
     const first_milestone = 0;
     const second_milestone = (sections[1].position - sections[0].position) * 0.75;
     const third_milestone = sections[1].position + (sections[2].position - sections[1].position) * 0.75;
+    const fourth_milestone = sections[2].position + (sections[3].position - sections[2].position) * 0.75;
 
     window.onscroll = function () {
         const scroll_top = document.documentElement.scrollTop;
@@ -74,6 +75,14 @@
                 activeNavSection(current_section);
             }
         }
+
+        if (fourth_milestone < scroll_top) {
+            if (current_section.section_id != sections[3].section_id) {
+                current_section = sections[3];
+                activeNavSection(current_section);
+            }
+        }
+
     }
 
     const audio = new Audio('./assets/audios/aqui-estan-mis-nenas.mp3');
